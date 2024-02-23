@@ -15,7 +15,7 @@ if(!cached){
     }
 }
 
-export const connectToDatavase =async () =>{
+export const connectToDatabase =async () =>{
     {/*Whenever trying to connect to database, will check if connection exists,
 if not, check if url exist and throw erro, if it exist then get a connection*/}
     if (cached.conn) return cached.conn;
