@@ -23,7 +23,7 @@ if not, check if url exist and throw erro, if it exist then get a connection*/}
     if(!MONGODB_URL) throw new Error('Missing mongodburl');
 
     cached.promise = cached.promise || mongooese.connect(MONGODB_URL, {
-        dbName: 'AiIMAGEGEN', bufferCommands: false
+        dbName: 'Ai ImageGen', bufferCommands: false
     })
     
     cached.conn = await cached.promise;
